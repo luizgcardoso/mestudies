@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Testes</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>Luiz Gustavo Cardoso</h1>
+            <hr />
+            <p>
+                lldsffhahhçadslhfdshlçfdlhlkfslkfhadlshlhadfshlasdhflhlasdhflhaklsfhladshklfçashklfhksahfkdshfklalshflhsaklhflshalfhsdhklfkldsahflhsaldfhldshflshlhfal
+            </p>
+            <ul>
+                <li>Cheroso</li>
+                <li>Gostoso</li>
+                <li>Inteligente</li>
+                <li>Bonito</li>
+                <li>Fala Ingles</li>
+            </ul>
+            <table>
+                <tr>
+                    <th>Desc</th>
+                    <th>@</th>
+                </tr>
+
+                <tr>
+                    <td>hkdfshkdfskldfshkl</td>
+
+                    <td>7932997</td>
+                </tr>
+            </table>
+            <form>
+                <label for="lname">Nome</label>
+                <input type="text" value="hfsh" />
+            </form>
+        </div>
+
+        <input type="text" id="input" placeholder="Digite algo" />
+        <button id="botao">Clique aqui</button>
+
+        <script>
+            const botao = document.getElementById("botao");
+            const input = document.getElementById("input");
+            const c = document.querySelector(".container");
+
+            // Evento de clique no botão
+
+            botao.addEventListener("click", function () {
+                alert("Você clicou no botão!");
+                c.style.backgroundColor = "grey";
+            });
+            // Evento de mudança no campo de entrada
+            input.addEventListener("input", function () {
+                console.log("Você digitou: " + input.value);
+            });
+        </script>
+    </body>
+</html>

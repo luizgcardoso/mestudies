@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <input type="text" id="n1" placeholder="Digite o primeiro número" />
+        <input type="text" id="n2" placeholder="Digite o segundo número" />
+        <button data-operacao="somar">+</button>
+        <button data-operacao="diminuir">-</button>
+        <button data-operacao="multiplicar">*</button>
+        <button data-operacao="dividir">/</button>
+    </body>
+
+    <script>
+        const op = (modo) => {
+            const a = parseFloat(document.getElementById("n1").value);
+            const b = parseFloat(document.getElementById("n2").value);
+            let r;
+            switch (modo) {
+                case "somar":
+                    r = a + b;
+                    break;
+                case "diminuir":
+                    r = a - b;
+                    break;
+                case "multiplicar":
+                    r = a * b;
+                    break;
+                case "dividir":
+                    r = a / b;
+                    break;
+
+                default:
+                    "nd";
+                    break;
+            }
+            alert(`resultado é ${r}`);
+        };
+        document.querySelectorAll("button").forEach((botao) => {
+            botao.addEventListener("click", () => {
+                op(botao.dataset.operacao);
+            });
+        });
+    </script>
+</html>
