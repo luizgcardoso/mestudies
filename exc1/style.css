@@ -1,0 +1,41 @@
+body {
+  margin: 0;
+  padding: 0;
+  align-content: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+}
+
+h1 {
+  color: black;
+  text-align: center;
+}
+h2 {
+  margin: 0;
+}
+p {
+  padding: 5px 0;
+  color: #b2b2b2;
+}
+
+div {
+  background-color: black;
+  color: white;
+  padding: 30px;
+  margin: 15px 80px;
+  align-content: center;
+  border-radius: 4px;
+}
+span {
+  color: #febe01;
+}
+
+button {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  background: #febe01;
+  color: #332100;
+  border-radius: 4px;
+  display: inline-block;
+}
