@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  color: black;
+}
+.titulo {
+  text-align: center;
+  padding: 2.5em;
+  margin: 0;
+}
+p {
+  font-size: 1.5em;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+header {
+  align-items: center;
+  margin-bottom: 10em;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+}
+nav a {
+  padding: 1em 2em;
+  background-color: white;
+  color: black;
+}
+nav ul li a:hover {
+  border: 0.1em solid red;
+}
+.grid {
+  margin: 0 10em;
+  max-width: 1200px;
+  max-height: auto;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, auto);
+  gap: 0.5em;
+}
+.sobre {
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.sobre h2 p {
+  text-align: right;
+}
+.sobre button {
+  display: block;
+  margin-left: auto;
+  margin-top: 2em;
+  padding: 1em 2em;
+  border-radius: 0.3em;
+  background-color: red;
+  color: white;
+  border: none;
+  a {
+    color: white;
+  }
+}
+
+.foto-bike {
+  grid-column: 2;
+  grid-row: 1;
+  max-width: 100%;
+  justify-content: end;
+}
+.titulo-vantagens {
+  grid-column: 1;
+  grid-row: 2;
+  text-align: center;
+  place-content: center;
+  font-size: 3.5em;
+  background-image: url("/img/bike-background.jpg");
+}
+.vantagens {
+  margin-top: 2em;
+  grid-column: 2;
+  grid-row: 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4em;
+  align-items: start;
+}
+.vantagens img {
+  margin-top: 1.3em;
+  max-width: 2em;
+  justify-self: right;
+}
+.rodape {
+  text-align: center;
+  padding: 2em 0;
+  background-color: #f1f1f1;
+  align-items: center;
+}
